@@ -1,4 +1,3 @@
-import "@fontsource-variable/inter";
 import { Route, Routes } from "react-router";
 import { AuthenticatedLayout } from "./layouts/authenticated";
 import { ROUTES } from "./lib/constants";
