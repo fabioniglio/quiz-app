@@ -1,45 +1,42 @@
-# Welcome to your Convex + React (Vite) + Convex Auth app
 
-This is a [Convex](https://convex.dev/) project created with [`npm create convex`](https://www.npmjs.com/package/create-convex).
 
-After the initial setup (<2 minutes) you'll have a working full-stack app using:
 
-- Convex as your backend (database, server logic)
-- [React](https://react.dev/) as your frontend (web page interactivity)
-- [Vite](https://vitest.dev/) for optimized web hosting
-- [Tailwind](https://tailwindcss.com/) for building great looking UI
-- [Convex Auth](https://labs.convex.dev/auth) for authentication
 
-## Get started
+https://github.com/user-attachments/assets/a4d66bc6-08f9-43f0-9390-d2f0f85bcb7f
 
-If you just cloned this codebase and didn't use `npm create convex`, run:
 
-```
-npm install
-npm run dev
-```
 
-If you're reading this README on GitHub and want to use this template, run:
+<div align="center">
+<h1 align="center">
+  <a href="https://hawanji.vercel.app/">Quiz Note</a>
+</h1>
+  <p>
+    Turn your notes into quiz with AI.
+  </p>
+</div>
 
-```
-npm create convex@latest -- -t react-vite-convexauth
-```
+## Free and Open Source
 
-For more information on how to configure Convex Auth, check out the [Convex Auth docs](https://labs.convex.dev/auth/).
+Quiz Note is free and open source. You use it with your own API key which stored securely.
 
-For more examples of different Convex Auth flows, check out this [example repo](https://www.convex.dev/templates/convex-auth).
+## Tech stack 💻
 
-## Learn more
+- [React](https://react.dev/) for frontend.
+- [Convex](https://www.convex.dev/) for backend.
+- [Motion](https://motion.dev/) for animations.
+- [Tailwind](https://tailwindcss.com/) for styling.
+- [Shadcn](https://ui.shadcn.com/) for components.
+- [Vercel](https://vercel.com/) for hosting and web analytics.
 
-To learn more about developing your project with Convex, check out:
+## Cloning & running 🏄
 
-- The [Tour of Convex](https://docs.convex.dev/get-started) for a thorough introduction to Convex principles.
-- The rest of [Convex docs](https://docs.convex.dev/) to learn about all Convex features.
-- [Stack](https://stack.convex.dev/) for in-depth articles on advanced topics.
+1. Clone the repo: `git clone https://github.com/tigerabrodi/hawanji`
+2. Setup a Convex account and create a new project.
+3. Run `pnpm install`
+4. Run `npx convex dev` (this will setup your `.env.local` file)
+5. Run `pnpm dev`
 
-## Join the community
+## License
 
-Join thousands of developers building full-stack apps with Convex:
+This project is licensed under the MIT License ❤️
 
-- Join the [Convex Discord community](https://convex.dev/community) to get help in real-time.
-- Follow [Convex on GitHub](https://github.com/get-convex/), star and contribute to the open-source implementation of Convex.
