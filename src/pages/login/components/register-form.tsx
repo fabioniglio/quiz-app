@@ -10,7 +10,6 @@ import { toast } from "sonner";
 
 const SIGN_UP_STEP = "signUp";
 
-const PASSWORD_MIN_LENGTH = 8;
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
 const PASSWORD_REQUIREMENTS =
