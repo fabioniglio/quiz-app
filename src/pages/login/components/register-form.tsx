@@ -10,7 +10,11 @@ import { toast } from "sonner";
 
 const SIGN_UP_STEP = "signUp";
 
-const PASSWORD_MIN_LENGTH = 6;
+const PASSWORD_MIN_LENGTH = 8;
+const PASSWORD_REGEX =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
+const PASSWORD_REQUIREMENTS =
+  "Password must be at least 8 characters long and include uppercase, lowercase, number, and special characters.";
 
 type FormState =
   | {
@@ -39,8 +43,8 @@ export function RegisterForm() {
         password: "",
       };
 
-      if (password.length < PASSWORD_MIN_LENGTH) {
-        errors.password = `Password must be at least ${PASSWORD_MIN_LENGTH} characters long`;
+      if (!PASSWORD_REGEX.test(password)) {
+        errors.password = PASSWORD_REQUIREMENTS;
         return { status: "error", errors };
       }
 
@@ -100,17 +104,16 @@ export function RegisterForm() {
           isError={state.status === "error" && !!state.errors?.password}
           required
           type="password"
-          helperText="Password must be at least 6 characters long"
+          helperText={PASSWORD_REQUIREMENTS}
           placeholder="********"
         />
       </div>
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2.5 mt-3">
         <Label htmlFor="confirmPassword">Confirm Password</Label>
         <InputWithFeedback
           name="confirmPassword"
           id="confirmPassword"
           required
-          // just show error border if any password errors
           isError={state.status === "error" && !!state.errors?.password}
           type="password"
           placeholder="********"

@@ -33,7 +33,7 @@ export function InputWithFeedback({
       )}
 
       {!isError && helperText && (
-        <p className="text-muted-foreground absolute -bottom-6 text-xs">
+        <p className="text-muted-foreground absolute -bottom-10 text-xs">
           {helperText}
         </p>
       )}
